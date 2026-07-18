@@ -268,7 +268,7 @@ section#art .photo-slot{background:
   background:repeating-linear-gradient(-45deg, var(--surface-2) 0 6px, #2E2740 6px 12px);
   box-shadow:0 0 0 1px var(--line);
 }
-.belt-item{position:relative; padding-bottom:44px;}
+.belt-item{position:relative; padding-bottom:44px; padding-left:46px;}
 .belt-item:last-child{padding-bottom:0;}
 .belt-stripe{
   position:absolute; left:10px; top:2px; width:22px; height:22px; border-radius:3px;
@@ -368,7 +368,7 @@ footer{padding:28px 0; text-align:center; color:var(--text-dim); font-size:12px;
   <div class="nav-inner">
     <div class="logo-wrap">
       <div class="logo-seal"><span>AO</span></div>
-      <div class="logo-name">arina.ovcharova</div>
+      <div class="logo-name" data-i18n="nav.logoName">Портфоліо</div>
     </div>
     <div class="nav-links" id="navLinks">
       <a href="#achievements" data-i18n="nav.achievements">Achievements</a>
@@ -645,7 +645,7 @@ footer{padding:28px 0; text-align:center; color:var(--text-dim); font-size:12px;
       <div class="skill-block">
         <h3 data-i18n="sk.hard">Hard skills</h3>
         <div class="tag-cloud">
-          <span class="tag" data-i18n="sk.h1">Python (beginner)</span>
+          <span class="tag" data-i18n="sk.h1">Python</span>
           <span class="tag" data-i18n="sk.h2">Machine learning</span>
           <span class="tag" data-i18n="sk.h3">Robotics &amp; microcontrollers</span>
           <span class="tag" data-i18n="sk.h4">Network diagnostics</span>
@@ -699,6 +699,7 @@ const i18n = {
   en: {
     "nav.achievements":"Achievements","nav.robotics":"Robotics & Research","nav.karate":"Karate",
     "nav.leadership":"Leadership","nav.art":"Digital Art","nav.contact":"Contact",
+    "nav.logoName":"Portfolio",
     "hero.eyebrow":"Ternopil, Ukraine","hero.title":"Arina Ovcharova",
     "hero.lede":"Vincit pacis columba",
     "hero.cta1":"See achievements","hero.cta2":"Download CV",
@@ -734,7 +735,7 @@ const i18n = {
     "lead.c3.title":"Volunteer","lead.c3.org":'NGO "Nasnaha"',"lead.c3.desc":'"Get 200" campaign, city clean-ups, and Red Cross trainings. Designed the event logo for one campaign, helped run "Student of the Year" and a city-wide clean-up day, and volunteered with Caritas.',
     "art.title":"Digital art","art.sub":"Painting in Krita — the quiet, hands-on counterpart to code and competition.","art.slot":"Artwork",
     "sk.title":"Skills & languages","sk.hard":"Hard skills","sk.soft":"Soft skills","sk.lang":"Languages","sk.edu":"Education",
-    "sk.h1":"Python (beginner)","sk.h2":"Machine learning","sk.h3":"Robotics & microcontrollers","sk.h4":"Network diagnostics","sk.h5":"Security testing",
+    "sk.h1":"Python","sk.h2":"Machine learning","sk.h3":"Robotics & microcontrollers","sk.h4":"Network diagnostics","sk.h5":"Security testing",
     "sk.s1":"Leadership","sk.s2":"Event organization","sk.s3":"Teamwork","sk.s4":"Decision-making under pressure",
     "sk.l1":"Ukrainian — native",
     "sk.school":'Ternopil Academic Lyceum "Ukrainian Gymnasium" named after I. Franko — since September 2023, GPA 10.6',
@@ -749,6 +750,7 @@ const i18n = {
   ua: {
     "nav.achievements":"Досягнення","nav.robotics":"Робототехніка й наука","nav.karate":"Карате",
     "nav.leadership":"Лідерство","nav.art":"Digital Art","nav.research":"Дослідження","nav.contact":"Контакти",
+    "nav.logoName":"Портфоліо",
     "hero.eyebrow":"Тернопіль, Україна","hero.title":"Аріна Овчарова",
     "hero.lede":"Vincit pacis columba",
     "hero.cta1":"Переглянути портфоліо","hero.cta2":"Завантажити резюме",
@@ -757,9 +759,9 @@ const i18n = {
     "ach.title":"Хронологія","ach.sub":"",
     "ach.i1.title":'2 місце — Всеукраїнський конкурс, категорія ROBO (ISEF)',
     "ach.i2.title":'1 місце — Міський науковий марафон "STEP UP"',
-    "ach.i3.title":"1 місце — Виставка науки WUNU",
+    "ach.i3.title":"1 місце — Виставка науки ЗУНУ",
     "ach.i4.title":"2 місце — МАН, напрям «Інженерія та матеріалознавство»",
-    "ach.i5.title":'2 місце — IT Cup, НТУ ХПІ «Kharkiv Triathlon»',
+    "ach.i5.title":'2 місце — ІТ-кубок НТУ «ХПІ»',
     "ach.i6.title":"5 місце — Чемпіонат Європи з карате Shotokan",
     "ach.i7.title":"8 місце — 37-й Міжнародний чемпіонат з розв'язання логіко-математичних задач",
     "ach.tag.robotics":"Робототехніка","ach.tag.karate":"Карате",
@@ -785,7 +787,7 @@ const i18n = {
     "lead.c3.title":"Волонтерка","lead.c3.org":'ГО «Наснага»',"lead.c3.desc":'Кампанія «Отримай 200», прибирання міста, тренінги Червоного Хреста. Розробила логотип для одного із заходів, займалася організацією «Учня року» та Дня прибирання, працювала в «Карітас».',
     "art.title":"Digital art","art.sub":"Малювання у Krita — тихий, ручний контрапункт до коду й змагань.","art.slot":"Робота",
     "sk.title":"Навички та мови","sk.hard":"Hard skills","sk.soft":"Soft skills","sk.lang":"Мови","sk.edu":"Освіта",
-    "sk.h1":"Python (початковий)","sk.h2":"Машинне навчання","sk.h3":"Робототехніка та мікроконтролери","sk.h4":"Діагностика мереж","sk.h5":"Тестування безпеки",
+    "sk.h1":"Python","sk.h2":"Машинне навчання","sk.h3":"Робототехніка та мікроконтролери","sk.h4":"Діагностика мереж","sk.h5":"Тестування безпеки",
     "sk.s1":"Лідерство","sk.s2":"Організація подій","sk.s3":"Командна робота","sk.s4":"Ухвалення рішень під тиском",
     "sk.l1":"Українська — рідна",
     "sk.school":'Тернопільський академічний ліцей «Українська гімназія» ім. І. Франка — з вересня 2023, середній бал 10.6',
